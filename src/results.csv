@@ -1,0 +1,11 @@
+topo,mode,trial,link,sent,lost,loss_pct,rtt_before_ms,rtt_after_ms,failover_s,recovered
+multi,dynamic,1,s1-s2,66,0,0.0,0.65,0.63,0.09,True
+multi,dynamic,2,s1-s2,66,0,0.0,0.56,0.57,0.07,True
+multi,dynamic,3,s1-s2,66,0,0.0,0.57,0.55,0.07,True
+multi,dynamic,4,s1-s2,66,0,0.0,0.57,0.58,0.08,True
+multi,dynamic,5,s1-s2,66,0,0.0,0.57,0.59,0.07,True
+multi,static,1,s1-s2,66,20,30.3,0.65,,,False
+multi,static,2,s1-s2,66,20,30.3,0.58,,,False
+multi,static,3,s1-s2,66,20,30.3,0.59,,,False
+multi,static,4,s1-s2,66,20,30.3,0.62,,,False
+multi,static,5,s1-s2,66,20,30.3,0.71,,,False
