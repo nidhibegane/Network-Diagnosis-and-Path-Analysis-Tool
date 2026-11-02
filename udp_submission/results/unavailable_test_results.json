@@ -1,0 +1,44 @@
+{
+  "server": {
+    "ip": "127.0.0.1",
+    "port": 50871
+  },
+  "configuration": {
+    "probe_count": 2,
+    "probe_interval_seconds": 0,
+    "timeout_seconds": 0.04
+  },
+  "probes": [
+    {
+      "sequence_number": 1,
+      "timestamp": "2026-11-02T17:45:15.631719Z",
+      "timestamp_epoch": 1793641515.6317194,
+      "status": "timeout",
+      "rtt_ms": null,
+      "packet_lost": true,
+      "invalid_response_count": 0,
+      "transport_error": "connection_reset"
+    },
+    {
+      "sequence_number": 2,
+      "timestamp": "2026-11-02T17:45:15.632825Z",
+      "timestamp_epoch": 1793641515.632825,
+      "status": "timeout",
+      "rtt_ms": null,
+      "packet_lost": true,
+      "invalid_response_count": 0,
+      "transport_error": "connection_reset"
+    }
+  ],
+  "summary": {
+    "total_probes_sent": 2,
+    "successful_responses": 0,
+    "lost_packets": 2,
+    "packet_loss_percentage": 100.0,
+    "average_rtt_ms": null,
+    "minimum_rtt_ms": null,
+    "maximum_rtt_ms": null,
+    "jitter_ms": null,
+    "invalid_responses": 0
+  }
+}

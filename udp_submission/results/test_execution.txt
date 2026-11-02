@@ -1,0 +1,57 @@
+test_configurable_count_interval_and_json_output (test_udp_diagnostics.UdpDiagnosticsTests.test_configurable_count_interval_and_json_output) ... ok
+test_invalid_response_is_ignored_until_valid_echo (test_udp_diagnostics.UdpDiagnosticsTests.test_invalid_response_is_ignored_until_valid_echo) ... ok
+test_jitter_uses_mean_absolute_successive_rtt_difference (test_udp_diagnostics.UdpDiagnosticsTests.test_jitter_uses_mean_absolute_successive_rtt_difference) ... ok
+test_normal_udp_communication (test_udp_diagnostics.UdpDiagnosticsTests.test_normal_udp_communication) ... ok
+test_packet_loss_is_reported_in_json (test_udp_diagnostics.UdpDiagnosticsTests.test_packet_loss_is_reported_in_json) ... ok
+test_rtt_calculation (test_udp_diagnostics.UdpDiagnosticsTests.test_rtt_calculation) ... ok
+test_server_ignores_malformed_packet_and_remains_available (test_udp_diagnostics.UdpDiagnosticsTests.test_server_ignores_malformed_packet_and_remains_available) ... ok
+test_unavailable_echo_service_is_reported_as_timeout (test_udp_diagnostics.UdpDiagnosticsTests.test_unavailable_echo_service_is_reported_as_timeout) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.612s
+
+OK
+[*] Sending 3 UDP probes to 127.0.0.1:62894 (interval=0.04s, timeout=0.5s)
+Probe   1: received, RTT 1.193 ms
+Probe   2: received, RTT 0.775 ms
+Probe   3: received, RTT 0.563 ms
+
+--- UDP DIAGNOSTICS ---
+Sent: 3 | Received: 3 | Lost: 0 (0.00%)
+RTT ms (avg/min/max): 0.843/0.563/1.193 | Jitter: 0.315
+JSON report: C:\Users\Nidhi Begane\Downloads\cn_project\udp_submission\results\configured_probes_test_results.json
+[*] Sending 1 UDP probes to 127.0.0.1:62896 (interval=0s, timeout=0.5s)
+Probe   1: received, RTT 1.927 ms
+
+--- UDP DIAGNOSTICS ---
+Sent: 1 | Received: 1 | Lost: 0 (0.00%)
+RTT ms (avg/min/max): 1.927/1.927/1.927 | Jitter: n/a
+JSON report: C:\Users\Nidhi Begane\Downloads\cn_project\udp_submission\results\invalid_response_test_results.json
+[*] Sending 2 UDP probes to 127.0.0.1:62898 (interval=0s, timeout=0.5s)
+Probe   1: received, RTT 1.095 ms
+Probe   2: received, RTT 0.377 ms
+
+--- UDP DIAGNOSTICS ---
+Sent: 2 | Received: 2 | Lost: 0 (0.00%)
+RTT ms (avg/min/max): 0.736/0.377/1.095 | Jitter: 0.718
+JSON report: C:\Users\Nidhi Begane\Downloads\cn_project\udp_submission\results\normal_test_results.json
+[*] Sending 3 UDP probes to 127.0.0.1:62900 (interval=0s, timeout=0.06s)
+Probe   1: received, RTT 1.151 ms
+Probe   2: timeout (packet lost)
+Probe   3: received, RTT 0.752 ms
+
+--- UDP DIAGNOSTICS ---
+Sent: 3 | Received: 2 | Lost: 1 (33.33%)
+RTT ms (avg/min/max): 0.952/0.752/1.151 | Jitter: 0.399
+JSON report: C:\Users\Nidhi Begane\Downloads\cn_project\udp_submission\results\packet_loss_test_results.json
+[!] Ignoring malformed UDP probe from ('127.0.0.1', 62903)
+[!] Ignoring malformed UDP probe from ('127.0.0.1', 62903)
+[!] Ignoring malformed UDP probe from ('127.0.0.1', 62903)
+[*] Sending 2 UDP probes to 127.0.0.1:62904 (interval=0s, timeout=0.04s)
+Probe   1: timeout (packet lost)
+Probe   2: timeout (packet lost)
+
+--- UDP DIAGNOSTICS ---
+Sent: 2 | Received: 0 | Lost: 2 (100.00%)
+RTT ms (avg/min/max): n/a/n/a/n/a | Jitter: n/a
+JSON report: C:\Users\Nidhi Begane\Downloads\cn_project\udp_submission\results\unavailable_test_results.json

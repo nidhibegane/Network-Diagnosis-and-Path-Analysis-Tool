@@ -1,0 +1,51 @@
+{
+  "server": {
+    "ip": "127.0.0.1",
+    "port": 50867
+  },
+  "configuration": {
+    "probe_count": 3,
+    "probe_interval_seconds": 0,
+    "timeout_seconds": 0.06
+  },
+  "probes": [
+    {
+      "sequence_number": 1,
+      "timestamp": "2026-11-02T17:45:15.234098Z",
+      "timestamp_epoch": 1793641515.2340982,
+      "status": "received",
+      "rtt_ms": 0.5492,
+      "packet_lost": false,
+      "invalid_response_count": 0
+    },
+    {
+      "sequence_number": 2,
+      "timestamp": "2026-11-02T17:45:15.234728Z",
+      "timestamp_epoch": 1793641515.234728,
+      "status": "timeout",
+      "rtt_ms": null,
+      "packet_lost": true,
+      "invalid_response_count": 0
+    },
+    {
+      "sequence_number": 3,
+      "timestamp": "2026-11-02T17:45:15.293311Z",
+      "timestamp_epoch": 1793641515.2933106,
+      "status": "received",
+      "rtt_ms": 0.2627,
+      "packet_lost": false,
+      "invalid_response_count": 0
+    }
+  ],
+  "summary": {
+    "total_probes_sent": 3,
+    "successful_responses": 2,
+    "lost_packets": 1,
+    "packet_loss_percentage": 33.33333333333333,
+    "average_rtt_ms": 0.40595000000000003,
+    "minimum_rtt_ms": 0.2627,
+    "maximum_rtt_ms": 0.5492,
+    "jitter_ms": 0.28650000000000003,
+    "invalid_responses": 0
+  }
+}
